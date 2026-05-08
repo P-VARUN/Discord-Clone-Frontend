@@ -18,13 +18,13 @@
 - **Responsive Design**
 
 ## 📁 Project Structure
-Discord_Clone_Frontend/
-├── index.html          # Main landing page
-├── style.css           # All styles & animations
-├── script.js           # Interactive features
-├── assets/             # Images, videos & icons
-└── README.md
-text
+
+    Discord_Clone_Frontend/
+    ├── index.html          # Main landing page
+    ├── style.css           # All styles & animations
+    ├── script.js           # Interactive features
+    ├── assets/             # Images, videos & icons
+    └── README.md
 
 ## 🚀 Getting Started
 
