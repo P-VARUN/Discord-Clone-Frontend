@@ -2,11 +2,13 @@
 
 **A pixel-perfect, responsive frontend recreation of Discord's official marketing website.** Built as part of the **User Interface Design** course (SEM-2).
 
-![Discord Clone Preview](https://discord-clone-frontend-inky.vercel.app/assets/Main.webp)
-
 ## ✨ Live Demo
 
-**[View Live →](https://discord-clone-frontend-inky.vercel.app)**
+**[View Live →](https://discord-clone-frontend-inky.vercel.app)**https://discord-clone-frontend-inky.vercel.app
+
+⚠️CAUTION : Open only in **Desktop / Laptop** with browser **100% Zoom** only for Better Experience.
+
+🚨**Not** made for **mobile device** for NOW!
 
 ## 🎯 Features
 
@@ -53,8 +55,7 @@ text## 🚀 Getting Started
 
 Made with ❤️ By Varun
 
-<br>
-<br>
+<hr>
 
 <h1 align="center">User Interface Design (23CSE113)</h1>
 <h3 align="center">LAB MANUAL</h3>
