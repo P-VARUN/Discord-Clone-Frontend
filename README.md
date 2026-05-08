@@ -1,3 +1,61 @@
+# Discord Clone Frontend
+
+**A pixel-perfect, responsive frontend recreation of Discord's official marketing website.** Built as part of the **User Interface Design** course (SEM-2).
+
+![Discord Clone Preview](https://discord-clone-frontend-inky.vercel.app/assets/Main.webp)
+
+## ✨ Live Demo
+
+**[View Live →](https://discord-clone-frontend-inky.vercel.app)**
+
+## 🎯 Features
+
+- **Modern Responsive Design** – Fully mobile-friendly with smooth animations
+- **Interactive Navigation** – Dropdown menus with hover effects and beautiful illustrations
+- **Hero Section** – Eye-catching landing with floating elements and Discord branding
+- **Feature Highlights** – Engaging sections showcasing Discord's key capabilities:
+  - Custom group chats with emojis & stickers
+  - High-quality streaming
+  - Seamless voice/text channels
+- **Smooth Animations** – Floating images, video backgrounds, and scroll effects
+- **Pure Vanilla Tech** – No frameworks, just clean HTML, CSS & JavaScript
+
+## 🛠️ Tech Stack
+
+- **HTML5**
+- **CSS3** (Flexbox, Grid, Custom Properties, Animations)
+- **Vanilla JavaScript**
+- **Responsive Design**
+
+## 📁 Project Structure
+Discord_Clone_Frontend/
+├── index.html          # Main landing page
+├── style.css           # All styles & animations
+├── script.js           # Interactive features
+├── assets/             # Images, videos & icons
+└── README.md
+text## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/P-VARUN/Discord_Clone_Frontend.git
+
+2. **Navigate to the projectBashcd Discord_Clone_Frontend
+3. Open in browser
+4. Simply open index.html in your favorite browser
+   Or use Live Server (VS Code extension) for the best experience
+
+## 🤝 Contributing
+- Feel free to fork this project and make it even better! Pull requests are welcome.
+
+## 📄 License
+- This project is for educational purposes.
+
+Made with ❤️ By Varun
+
+<br>
+<br>
+
 <h1 align="center">User Interface Design (23CSE113)</h1>
 <h3 align="center">LAB MANUAL</h3>
 
