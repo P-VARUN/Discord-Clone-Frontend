@@ -6,21 +6,9 @@
 
 [View Live →](https://discord-clone-frontend-inky.vercel.app)https://discord-clone-frontend-inky.vercel.app
 
-⚠️CAUTION : Open only in **Desktop / Laptop** with browser **100% Zoom** only for Better Experience.
+- ⚠️CAUTION : Open only in **Desktop / Laptop** with browser **100% Zoom** only for Better Experience.
 
-🚨**Not** made for **mobile device** for NOW!
-
-## 🎯 Features
-
-- **Modern Responsive Design** – Fully mobile-friendly with smooth animations
-- **Interactive Navigation** – Dropdown menus with hover effects and beautiful illustrations
-- **Hero Section** – Eye-catching landing with floating elements and Discord branding
-- **Feature Highlights** – Engaging sections showcasing Discord's key capabilities:
-  - Custom group chats with emojis & stickers
-  - High-quality streaming
-  - Seamless voice/text channels
-- **Smooth Animations** – Floating images, video backgrounds, and scroll effects
-- **Pure Vanilla Tech** – No frameworks, just clean HTML, CSS & JavaScript
+- 🚨**Not** made for **mobile device** for NOW!
 
 ## 🛠️ Tech Stack
 
@@ -36,7 +24,8 @@ Discord_Clone_Frontend/
 ├── script.js           # Interactive features
 ├── assets/             # Images, videos & icons
 └── README.md
-text## 🚀 Getting Started
+
+## 🚀 Getting Started
 
 1. **Clone the repository**
    ```bash
