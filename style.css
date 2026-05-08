@@ -198,11 +198,22 @@
 
         .dropdown-robot {
             position: absolute;
-            bottom: -40px;
-            right: -60px;
-            width: 150px;
+            bottom: -100px;
+            right: -100px;
+            width: 175px;
             pointer-events: none;
             z-index: 10;
+            filter: drop-shadow(0 8px 15px rgba(0,0,0,0.25));
+            transform: translateY(30px) scale(0.9);
+            opacity: 0;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition-delay: 0.05s;
+        }
+
+        .dropdown-menu.show .dropdown-robot,
+        .dropdown-menu1.show .dropdown-robot {
+            transform: translateY(0) scale(1);
+            opacity: 1;
         }
 
         .dropdown-menu.show,
