@@ -24,6 +24,7 @@ Discord_Clone_Frontend/
 ├── script.js           # Interactive features
 ├── assets/             # Images, videos & icons
 └── README.md
+text
 
 ## 🚀 Getting Started
 
