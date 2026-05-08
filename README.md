@@ -32,7 +32,7 @@
    ```bash
    git clone https://github.com/P-VARUN/Discord_Clone_Frontend.git
 
-2. **Navigate to the projectBashcd Discord_Clone_Frontend
+2. Navigate to the projectBashcd Discord_Clone_Frontend
 3. Open in browser
 4. Simply open index.html in your favorite browser
    Or use Live Server (VS Code extension) for the best experience
