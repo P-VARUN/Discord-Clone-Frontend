@@ -4,7 +4,7 @@
 
 ## ✨ Live Demo
 
-[View Live →](https://discord-clone-frontend-inky.vercel.app)https://discord-clone-frontend-inky.vercel.app
+View Live →https://discord-clone-frontend-inky.vercel.app
 
 - ⚠️CAUTION : Open only in **Desktop / Laptop** with browser **100% Zoom** only for Better Experience.
 
