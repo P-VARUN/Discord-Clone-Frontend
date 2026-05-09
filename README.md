@@ -42,6 +42,9 @@
 ## 📄 License
 - This project is for educational purposes.
 
+## 🔎Contact Info
+Contact me if any errors faced, or doubts in the project: https://discord.gg/x7fwNARK3v
+
 Made with ❤️ By Varun
 
 <hr>
