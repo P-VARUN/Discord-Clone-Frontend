@@ -90,4 +90,20 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     });
+
+    // Logo Scroll Effect
+    const logo = document.querySelector('.logo');
+    const heroSection = document.querySelector('.hero');
+    
+    window.addEventListener('scroll', () => {
+        if (heroSection && logo) {
+            const heroRect = heroSection.getBoundingClientRect();
+            // Trigger when the hero section is scrolled past the top navigation area
+            if (heroRect.bottom < 100) {
+                logo.classList.add('scrolled');
+            } else {
+                logo.classList.remove('scrolled');
+            }
+        }
+    });
 });

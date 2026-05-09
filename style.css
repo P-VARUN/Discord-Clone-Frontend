@@ -66,11 +66,34 @@
             color: var(--discord-white);
             position: absolute;
             left: 40px;
+            transition: all 0.3s ease;
+        }
+
+        .logo.scrolled {
+            background-color: var(--discord-white);
+            color: var(--discord-dark);
+            padding: 11px 20px;
+            border-radius: 17px;
+            font-size: 15px;
+            font-weight: 700;
+            gap: 8px;
+        }
+
+        .logo.scrolled:hover {
+            background-color: #9c9c9c;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
         }
 
         .logo svg {
             width: 30px;
             height: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .logo.scrolled svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--discord-dark) !important;
         }
 
         .nav-links {
