@@ -145,19 +145,15 @@
             left: 0;
             width: 100vw;
             height: 100vh;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.727);
             backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(8px);
             z-index: 50;
             opacity: 0;
-            visibility: hidden;
             transition: all 0.3s ease;
-            pointer-events: none;
         }
 
         .nav-backdrop.show {
             opacity: 1;
-            visibility: visible;
         }
 
         /* ===== DROPDOWN MENU ===== */
@@ -1154,3 +1150,215 @@
 
         .hero p { animation-delay: 0.2s; }
         .hero-buttons { animation-delay: 0.4s; }
+
+        /* ===== MOBILE MENU ===== */
+        .mobile-menu-toggle {
+            display: none;
+            background: rgba(255, 255, 255, 0.111);
+            backdrop-filter: blur(100%);
+            border: none;
+            color: var(--discord-white);
+            width: 40px;
+            height: 40px;
+            padding: 8px;
+            border-radius: 40%;
+            cursor: pointer;
+            position: absolute;
+            right: 40px;
+            align-items: center;
+            justify-content: center;
+            z-index: 101;
+            transition: background-color 0.3s;
+        }
+
+        .mobile-menu-toggle:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .mobile-menu-drawer {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 450px;
+            height: 100vh;
+            background-color: var(--discord-blurple);
+            z-index: 1000;
+            transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+            overflow-y: auto;
+            box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+            padding: 30px 20px 40px;
+        }
+
+        .mobile-menu-drawer.show {
+            right: 0;
+        }
+
+        .mobile-menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 0 10px;
+        }
+
+        .mobile-menu-header .mobile-logo {
+            position: static;
+            padding: 0;
+        }
+
+        .mobile-menu-close {
+            background: rgba(255, 255, 255, 0.111);
+            backdrop-filter: blur(100%);
+            border: none;
+            color: var(--discord-white);
+            width: 40px;
+            height: 40px;
+            padding: 8px;
+            border-radius: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .mobile-menu-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .mobile-menu-links {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 0px 10px;
+        }
+
+        .mobile-nav-link {
+            color: var(--discord-white);
+            font-size: 16px;
+            font-weight: 700;
+            padding: 25px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: color 0.2s;
+        }
+
+        .mobile-nav-link:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .mobile-dropdown-divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            width: 100%;
+        }
+
+        .mobile-nav-dropdown svg {
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-nav-dropdown.active svg {
+            transform: rotate(-180deg);
+        }
+
+        .mobile-dropdown-menu {
+            display: none;
+            flex-direction: column;
+            padding-left: 15px;
+            padding-bottom: 15px;
+        }
+
+        .mobile-dropdown-menu.show {
+            display: flex;
+        }
+
+        .mobile-dropdown-menu a {
+            color: rgba(255, 255, 255, 0.962);
+            font-size: 15px;
+            font-weight: 600;
+            padding: 10px 0;
+            transition: color 0.2s;
+        }
+
+        .mobile-dropdown-menu .s-h {
+            color:rgba(255, 255, 255, 0.522);
+        }
+
+        .mobile-dropdown-menu a:hover {
+            color: var(--discord-white);
+        }
+
+        .mobile-menu-bottom {
+            margin-top: auto;
+            padding: 20px 10px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .mobile-open-btn {
+            border: solid rgba(255, 255, 255, 0.15);
+            background-color: #00000000;
+            color: var(--discord-white);
+            padding: 16px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 14px;
+        }
+
+        .mobile-open-btn:hover {
+            background: rgba(255, 255, 255, 0);
+            box-shadow: none;
+        }
+
+        .mobile-download-btn {
+            background: var(--discord-white);
+            color: var(--discord-dark);
+            padding: 16px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 14px;
+            text-align: center;
+        }
+
+        .mobile-download-btn:hover {
+            background: #f0f0f0;
+        }
+        .mobile-download-btn::before {
+            display: none;
+        }
+
+        /* ===== RESPONSIVE STYLES ===== */
+        @media screen and (max-width: 1100px) {
+            .nav-links {
+                display: none;
+            }
+
+            .nav-btn {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .navbar {
+                justify-content: flex-start;
+            }
+            
+            .logo {
+                left: 40px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .mobile-menu-drawer {
+                width: 100%;
+                border-radius: 0;
+            }
+        }

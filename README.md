@@ -10,6 +10,10 @@
 
 - 🚨**Not** made for **mobile device** for NOW!
 
+## 📷 Images
+
+![alt text](image.png)
+
 ## 🛠️ Tech Stack
 
 - **HTML5**

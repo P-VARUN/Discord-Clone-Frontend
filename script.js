@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     const otherMenu = otherWrapper.querySelector('.dropdown-menu') || otherWrapper.querySelector('.dropdown-menu1');
                     
                     // Cancel any pending close animations for the other menus
-                    clearTimeout(otherWrapper.leaveTimeout); 
+                    clearTimeout(otherWrapper.leaveTimeout);
                     
                     // Instantly hide them
                     if (otherMenu) otherMenu.classList.remove('show');
@@ -105,5 +105,39 @@ document.addEventListener("DOMContentLoaded", () => {
                 logo.classList.remove('scrolled');
             }
         }
+    });
+
+    // Mobile Menu
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenuClose = document.querySelector('.mobile-menu-close');
+    const mobileMenuDrawer = document.querySelector('.mobile-menu-drawer');
+
+
+    if (mobileMenuToggle && mobileMenuClose && mobileMenuDrawer) {
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuDrawer.classList.add('show');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+            if (backdrop) backdrop.classList.add('show');
+        });
+
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenuDrawer.classList.remove('show');
+            document.body.style.overflow = '';
+            if (backdrop) backdrop.classList.remove('show');
+        });
+    }
+
+    // Mobile Nav Dropdowns
+    const mobileDropdowns = document.querySelectorAll('.mobile-nav-dropdown');
+
+    mobileDropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', (e) => {
+            e.preventDefault();
+            dropdown.classList.toggle('active');
+            const menu = dropdown.nextElementSibling;
+            if (menu && menu.classList.contains('mobile-dropdown-menu')) {
+                menu.classList.toggle('show');
+            }
+        });
     });
 });
