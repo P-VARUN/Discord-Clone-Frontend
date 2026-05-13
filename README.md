@@ -54,7 +54,7 @@ Made with ❤️ By Varun
 <hr>
 
 <h1 align="center">User Interface Design (23CSE113)</h1>
-<h3 align="center">LAB MANUAL</h3>
+<h3 align="center">ASSIGNMENT</h3>
 
 <table align="center">
   <tr>
