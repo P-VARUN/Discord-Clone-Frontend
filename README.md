@@ -8,11 +8,11 @@
 
 - ⚠️CAUTION : Open only in **Desktop / Laptop** with browser **100% Zoom** only for Better Experience.
 
-- 🚨**Not** made for **mobile device** for NOW!
+- 🚨**UPDATE in progress** for **MOBILE VERSION**.
 
 ## 📷 Images
 
-![alt text](image.png)
+![alt text](assets/image.png)
 
 ## 🛠️ Tech Stack
 
