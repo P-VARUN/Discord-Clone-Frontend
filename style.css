@@ -1473,10 +1473,7 @@
             .feature-box-5-1 img, .feature-box-5-2 img, .feature-box-5-3 img {
                 width: 120px;
             }
-        }
 
-        @media screen and (max-width: 768px) {
-            
             /* Mobile Scrolled Header Effect */
             .navbar.mobile-scrolled {
                 position: fixed !important;
@@ -1518,10 +1515,20 @@
             .hero-text p {
                 font-size: 16px;
             }
+        }
+
+        @media screen and (max-width: 768px) {
             
             /* Mobile Feature Stacking */
             .feature-box-1-1, .feature-box-2, .feature-box-3, .feature-box-4, .feature-box-5, .feature-box-6, .feature-box-5-1, .feature-box-5-2, .feature-box-5-3 {
                 display: none;
+            }
+            .feature-robot {
+                top: -10%;
+                width: 50px;
+            }
+            .bottom-cta-content h2 {
+                font-size:2rem;
             }
             .chat-feature {
                 flex-direction: column;
@@ -1557,6 +1564,7 @@
             .bottom-cta-content {
                 margin-bottom: -250px;
             }
+            
             /* Mobile Footer Layout */
             .footer {
                 padding: 40px 20px;
@@ -1596,7 +1604,7 @@
                 font-weight: 600;
                 margin-bottom: 10px;
                 padding-top: 20px;
-                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                border-top: 1px hidden rgba(255, 255, 255, 0.1);
             }
             .footer-col {
                 width: 100%;
@@ -1622,9 +1630,29 @@
                 transform: rotate(45deg);
                 margin-right: 5px;
             }
-            .footer-col br,
-            .footer-col a {
+            .footer-col h3 {
+                transition: margin-bottom 0.3s ease;
+            }
+            .footer-col h3::after {
+                transition: transform 0.3s ease;
+            }
+            .footer-col-links {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-out;
+            }
+            .footer-col br {
                 display: none;
+            }
+            .footer-col.active h3 {
+                margin-bottom: 15px;
+                color: #fff;
+            }
+            .footer-col.active h3::after {
+                transform: rotate(225deg) translate(-2px, -2px);
+            }
+            .footer-col.active .footer-col-links {
+                max-height: 400px;
             }
             .footer-social-block {
                 order: 4;

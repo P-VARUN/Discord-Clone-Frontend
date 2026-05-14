@@ -164,4 +164,25 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    // Footer Mobile Accordion
+    const footerCols = document.querySelectorAll('.footer-col h3');
+    footerCols.forEach(colHeader => {
+        colHeader.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                const parentCol = colHeader.parentElement;
+                const isActive = parentCol.classList.contains('active');
+                
+                // Close all
+                document.querySelectorAll('.footer-col').forEach(col => {
+                    col.classList.remove('active');
+                });
+
+                // Toggle current
+                if (!isActive) {
+                    parentCol.classList.add('active');
+                }
+            }
+        });
+    });
 });
