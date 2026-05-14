@@ -1502,7 +1502,7 @@
             }
             .chat-text {
                 order: 1;
-                padding: 0;
+                padding: 15;
                 text-align: left;
             }
             .chat-text h2 {
@@ -1524,6 +1524,84 @@
                 scale: 0.8;
                 bottom: calc(100% - 10px);
                 transform-origin: bottom center;
+            }
+            
+            /* Mobile Footer Layout */
+            .footer {
+                padding: 40px 20px;
+            }
+            .footer-inner {
+                display: flex;
+                flex-direction: column;
+            }
+            .footer-left {
+                display: contents;
+            }
+            .footer-logo-icon {
+                order: 1;
+                width: 40px;
+                height: 40px;
+                margin-bottom: 20px;
+            }
+            .footer-lang-block {
+                order: 2;
+                margin-bottom: 30px;
+                width: 100%;
+            }
+            .lang-dropdown-container {
+                width: 100%;
+            }
+            .footer-nav {
+                order: 3;
+                flex-direction: column;
+                gap: 0;
+                width: 100%;
+            }
+            .footer-nav::before {
+                content: "Menu";
+                display: block;
+                color: rgba(255, 255, 255, 0.65);
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                padding-top: 20px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .footer-col {
+                width: 100%;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 15px 0;
+            }
+            .footer-col h3 {
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 16px;
+                color: #fff;
+                cursor: pointer;
+            }
+            .footer-col h3::after {
+                content: "";
+                display: block;
+                width: 8px;
+                height: 8px;
+                border-bottom: 2px solid #fff;
+                border-right: 2px solid #fff;
+                transform: rotate(45deg);
+                margin-right: 5px;
+            }
+            .footer-col br,
+            .footer-col a {
+                display: none;
+            }
+            .footer-social-block {
+                order: 4;
+                margin-top: 30px;
+                padding-bottom: 20px;
+            }
+            .footer-bottom {
+                display: none;
             }
         }
 
