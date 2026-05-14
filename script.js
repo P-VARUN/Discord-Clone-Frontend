@@ -91,17 +91,41 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Logo Scroll Effect
+    // Logo and Navbar Scroll Effect
     const logo = document.querySelector('.logo');
     const heroSection = document.querySelector('.hero');
+    const navbar = document.querySelector('.navbar');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
     
     window.addEventListener('scroll', () => {
-        if (heroSection && logo) {
+        if (heroSection && logo && navbar) {
             const heroRect = heroSection.getBoundingClientRect();
-            // Trigger when the hero section is scrolled past the top navigation area
-            if (heroRect.bottom < 100) {
-                logo.classList.add('scrolled');
+            
+            if (window.innerWidth > 1100) {
+                // Desktop logic: trigger when hero is scrolled past top nav area
+                if (heroRect.bottom < 100) {
+                    logo.classList.add('scrolled');
+                } else {
+                    logo.classList.remove('scrolled');
+                }
+                // Cleanup mobile classes
+                navbar.classList.remove('mobile-scrolled');
+                logo.classList.remove('mobile-scrolled');
+                if (menuToggle) menuToggle.classList.remove('mobile-scrolled');
             } else {
+                // Mobile/Tablet logic: trigger after scrolling half of hero section
+                const scrolledHalf = (window.scrollY > (heroSection.offsetHeight / 2));
+                
+                if (scrolledHalf) {
+                    navbar.classList.add('mobile-scrolled');
+                    logo.classList.add('mobile-scrolled');
+                    if (menuToggle) menuToggle.classList.add('mobile-scrolled');
+                } else {
+                    navbar.classList.remove('mobile-scrolled');
+                    logo.classList.remove('mobile-scrolled');
+                    if (menuToggle) menuToggle.classList.remove('mobile-scrolled');
+                }
+                // Ensure desktop class is removed
                 logo.classList.remove('scrolled');
             }
         }

@@ -33,7 +33,7 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/P-VARUN/Discord_Clone_Frontend.git
+   git clone https://github.com/P-VARUN/Discord-Clone-Frontend.git
 
 2. Navigate to the projectBashcd Discord_Clone_Frontend
 3. Open in browser

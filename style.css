@@ -149,11 +149,13 @@
             backdrop-filter: blur(10px);
             z-index: 50;
             opacity: 0;
+            pointer-events: none;
             transition: all 0.3s ease;
         }
 
         .nav-backdrop.show {
             opacity: 1;
+            pointer-events: auto;
         }
 
         /* ===== DROPDOWN MENU ===== */
@@ -1474,6 +1476,33 @@
         }
 
         @media screen and (max-width: 768px) {
+            
+            /* Mobile Scrolled Header Effect */
+            .navbar.mobile-scrolled {
+                position: fixed !important;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: var(--discord-blurple);
+                padding: 34px 40px !important;
+                margin: 0;
+                z-index: 100;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            }
+            .logo.mobile-scrolled {
+                background: none !important;
+                color: white !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                border-radius: 0 !important;
+            }
+            .logo.mobile-scrolled svg {
+                fill: white !important;
+            }
+            .mobile-menu-toggle.mobile-scrolled {
+                background: none;
+                color: white;
+            }
             .hero-buttons {
                 flex-direction: column;
                 align-items: center;
@@ -1525,7 +1554,9 @@
                 bottom: calc(100% - 10px);
                 transform-origin: bottom center;
             }
-            
+            .bottom-cta-content {
+                margin-bottom: -250px;
+            }
             /* Mobile Footer Layout */
             .footer {
                 padding: 40px 20px;
@@ -1602,6 +1633,14 @@
             }
             .footer-bottom {
                 display: none;
+            }
+            .footer-characters, .robo-bottom-img, .robo-top-img {
+                opacity: 0;
+            }
+            .footer-floating {
+                scale: 190%;
+                top: 70%;
+                left: 60%;
             }
         }
 
