@@ -76,6 +76,10 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener('scroll', () => {
         requestAnimationFrame(() => {
             parallaxBoxes.forEach(box => {
+                if (window.innerWidth <= 768) {
+                    box.style.transform = 'none';
+                    return;
+                }
                 const wrapper = box.closest('.feature-wrapper');
                 if (wrapper) {
                     const rect = wrapper.getBoundingClientRect();
