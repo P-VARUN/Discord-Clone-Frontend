@@ -6,9 +6,9 @@
 
 **View Live →**https://discord-clone-frontend-inky.vercel.app
 
-- ⚠️CAUTION : Open only in **Desktop / Laptop** with browser **100% Zoom** only for Better Experience.
+- ⚠️CAUTION : In **Desktop / Laptop** use with brower **100% Zoom** for Better Experience.
 
-- 🚨**UPDATE in progress** for **MOBILE VERSION**.
+- ✨Responsive design works well on **Mobile, Tab & Desktop**.
 
 ## 📷 Images
 
