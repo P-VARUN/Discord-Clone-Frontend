@@ -1354,6 +1354,177 @@
             .logo {
                 left: 40px;
             }
+
+            .hero {
+                padding-top: 100px;
+                padding-bottom: 40px;
+                margin-left: 0;
+                margin-bottom: 0;
+                min-height: auto;
+            }
+
+            .hero-content {
+                flex-direction: column-reverse;
+                justify-content: center;
+                gap: 40px;
+                margin-bottom: 30px;
+            }
+
+            .hero-text {
+                flex: none;
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-text h1 {
+                font-size: 48px;
+                letter-spacing: -1px;
+            }
+
+            .hero-text p {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .hero-image {
+                flex: none;
+                width: 100%;
+                max-width: 500px;
+                margin: 0 auto;
+                position: relative;
+            }
+
+            .main-art {
+                transform: none;
+                width: 100%;
+                display: block;
+            }
+            
+            .main-1 img, .main-2 img, .main-3 img {
+                transform: none;
+                max-width: none;
+            }
+
+            .main-1 img {
+                top: auto;
+                bottom: -14%;
+                left: 56%;
+                right: auto;
+                width: 25%;
+            }
+            
+            .main-2 img {
+                top: auto;
+                bottom: 10%;
+                right: -2%;
+                left: auto;
+                width: 32%;
+            }
+            
+            .main-3 img {
+                top: auto;
+                bottom: -10%;
+                left: 28%;
+                right: auto;
+                width: 12%;
+            }
+
+            .hero-crown {
+                left: 0%;
+                top: 10%;
+                scale: 0.5;
+            }
+
+            .hero-star {
+                right: 0%;
+                top: 0%;
+                scale: 0.5;
+            }
+            /* Tablet Feature Scaling */
+            .feature-wrapper {
+                padding: 60px 20px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            .chat-feature {
+                padding: 24px;
+                gap: 30px;
+                border-radius: 100px;
+            }
+            .chat-text h2 {
+                font-size: 30px;
+                margin-bottom: 16px;
+            }
+            .chat-text p {
+                font-size: 16px;
+            }
+            .visual-bg {
+                min-height: 250px;
+                border-radius: 80px;
+            }
+            .feature-box-1-1 img, .feature-box-2 img, .feature-box-3 img, .feature-box-4 img, .feature-box-5 img, .feature-box-6 img {
+                width: 150px; 
+            }
+            .feature-box-5-1 img, .feature-box-5-2 img, .feature-box-5-3 img {
+                width: 120px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+                padding: 0 20px;
+            }
+            .btn-primary, .btn-secondary {
+                width: 75%;
+                text-align: center;
+            }
+            .hero-text h1 {
+                font-size: 36px;
+            }
+            .hero-text p {
+                font-size: 16px;
+            }
+            
+            /* Mobile Feature Stacking */
+            .feature-box-1-1, .feature-box-2, .feature-box-3, .feature-box-4, .feature-box-5, .feature-box-6, .feature-box-5-1, .feature-box-5-2, .feature-box-5-3 {
+                display: none;
+            }
+            .chat-feature {
+                flex-direction: column;
+                border-radius: 90px;
+                padding: 40px 20px 20px 20px;
+                gap: 30px;
+            }
+            .chat-text {
+                order: 1;
+                padding: 0;
+                text-align: left;
+            }
+            .chat-text h2 {
+                font-size: 32px;
+            }
+            .chat-visual {
+                order: 2;
+                width: 100%;
+                padding: 0;
+            }
+            .visual-bg {
+                min-height: 250px;
+                width: 100%;
+                border-radius: 70px;
+            }
+            .feature-robot {
+                right: 50%;
+                transform: translateX(50%);
+                scale: 0.8;
+                bottom: calc(100% - 10px);
+                transform-origin: bottom center;
+            }
         }
 
         @media screen and (max-width: 500px) {
